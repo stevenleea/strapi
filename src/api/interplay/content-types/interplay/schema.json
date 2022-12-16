@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "interplays",
+  "info": {
+    "singularName": "interplay",
+    "pluralName": "interplays",
+    "displayName": "Interplay"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "cover": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "full_description": {
+      "type": "richtext"
+    },
+    "product_recommendation": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "modal_identifier": {
+      "type": "string"
+    },
+    "product_recommend_desc": {
+      "type": "richtext"
+    },
+    "illustration": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "afterplays": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::afterplay.afterplay",
+      "inversedBy": "interplays"
+    },
+    "foreplays": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::foreplay.foreplay",
+      "inversedBy": "interplays"
+    }
+  }
+}

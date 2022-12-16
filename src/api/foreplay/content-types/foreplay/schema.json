@@ -4,7 +4,8 @@
   "info": {
     "singularName": "foreplay",
     "pluralName": "foreplays",
-    "displayName": "Foreplay"
+    "displayName": "Foreplay",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,33 +16,41 @@
       "type": "string"
     },
     "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "full_description": {
       "type": "richtext"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "description": {
       "type": "richtext"
     },
     "modal_identifier": {
       "type": "string"
+    },
+    "interplays": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::interplay.interplay",
+      "inversedBy": "foreplays"
     }
   }
 }

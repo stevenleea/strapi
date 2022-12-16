@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "special_moments",
+  "info": {
+    "singularName": "special-moment",
+    "pluralName": "special-moments",
+    "displayName": "Special Moment"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "cover": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "full_description": {
+      "type": "richtext"
+    },
+    "modal_identifier": {
+      "type": "string"
+    }
+  }
+}
