@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "afterplays",
+  "info": {
+    "singularName": "afterplay",
+    "pluralName": "afterplays",
+    "displayName": "Afterplay"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "cover": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "full_description": {
+      "type": "richtext"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "modal_familiar": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
